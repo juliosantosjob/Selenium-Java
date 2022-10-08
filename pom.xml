@@ -24,6 +24,6 @@
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>4.1.1</version>
-        </dependency>
+        </dependency> 
     </dependencies>
 </project>
