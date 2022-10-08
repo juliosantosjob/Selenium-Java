@@ -12,7 +12,7 @@ import static org.testng.AssertJUnit.assertEquals;
 
 import java.time.Duration;
 
-public class Login {
+public class LoginTest {
 	private WebDriver driver;
 
 	@Before
