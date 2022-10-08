@@ -15,14 +15,12 @@ public class AddProduct {
 
 	@Before
 	public void setDriver() {
-		System.out.println("Starting Execution");
-		String ProjectPath = System.getProperty("user.dir");
-		System.setProperty("webdriver.chrome.driver",
-				ProjectPath + "\\src\\test\\resources\\chromeDriver\\chromedriver.exe");
+		System.out.println("Start");
 		ChromeOptions options = new ChromeOptions();
 		String BaseUrl = "https://www.saucedemo.com/";
+                WebDriverManager.chromedriver().setup();
 
-		driver = new ChromeDriver(options);
+		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.get(BaseUrl);
