@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import pages.LoginPage;
-import org.testng.Assert;
+import static org.junit.Assert.assertTrue;
 import static org.testng.AssertJUnit.assertEquals;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
