@@ -1,6 +1,6 @@
 package pages;
 
-import static org.junit.Assert.assertEquals;
+import org.testing.Assert;
 
 import org.openqa.selenium.By;
 import elements.AddProductElements;
