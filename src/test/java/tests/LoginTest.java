@@ -1,7 +1,7 @@
 package tests;
 
-import testng.annotations.Before;
-import testng.annotations.After;
+import org.testng.annotations.Before;
+import org.testng.annotations.After;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
