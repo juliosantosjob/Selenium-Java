@@ -4,7 +4,6 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.Test;
 import pages.LoginPage;
-import org.junit.Before;
 import java.time.Duration;
 import pages.AddProductPage;
 import org.openqa.selenium.WebDriver;
