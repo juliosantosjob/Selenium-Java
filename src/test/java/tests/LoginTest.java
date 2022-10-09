@@ -17,7 +17,6 @@ public class LoginTest {
 	private WebDriver driver;
 
 	@BeforeClass
-	@BeforeClass
 	public void setDriver() {
 		System.out.println("Start");
 		String BaseUrl = "https://www.saucedemo.com/";
