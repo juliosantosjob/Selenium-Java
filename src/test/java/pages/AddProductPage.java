@@ -1,7 +1,6 @@
 package pages;
 
-import org.testing.Assert;
-
+import org.testng.Assert;
 import org.openqa.selenium.By;
 import elements.AddProductElements;
 import org.openqa.selenium.WebDriver;
