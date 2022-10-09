@@ -1,6 +1,7 @@
 package pages;
 
-import org.testng.Assert;
+import static org.junit.Assert.assertTrue;
+import static org.testng.AssertJUnit.assertEquals;
 import org.openqa.selenium.By;
 import elements.AddProductElements;
 import org.openqa.selenium.WebDriver;
