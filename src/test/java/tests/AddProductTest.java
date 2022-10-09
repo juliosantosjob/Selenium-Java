@@ -1,8 +1,8 @@
 package tests;
 
 import org.junit.Test;
-import testng.annotations.BeforeClass;
-import testng.annotations.AfterClass;
+import testng.annotations.Before;
+import testng.annotations.After;
 import pages.LoginPage;
 import org.junit.Before;
 import java.time.Duration;
@@ -15,7 +15,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 public class AddProductTest {
 	WebDriver driver;
 
-	@BeforeClass
+	@Before
 	public void setDriver() {
 		System.out.println("Start");
 		ChromeOptions options = new ChromeOptions();
@@ -44,7 +44,7 @@ public class AddProductTest {
 		addProductPage.ISeeMyProductInTheCart("Sauce Labs Bike Light");
 	}
 
-	@AfterClass
+	@After
 	public void closeDriver() {
 		driver.quit();
 	}
