@@ -1,7 +1,7 @@
 package tests;
 
-import testng.annotations.BeforeClass;
-import testng.annotations.AfterClass;
+import testng.annotations.Before;
+import testng.annotations.After;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,7 +16,7 @@ import java.time.Duration;
 public class LoginTest {
 	private WebDriver driver;
 
-	@BeforeClass
+	@Before
 	public void setDriver() {
 		System.out.println("Start");
 		ChromeOptions options = new ChromeOptions();
@@ -77,7 +77,7 @@ public class LoginTest {
 		assertTrue(loginPage.errorReturned().contains(messageError));
 	}
 
-	@AfterClass
+	@After
 	public void closeDriver() {
 		driver.quit();
 	}
