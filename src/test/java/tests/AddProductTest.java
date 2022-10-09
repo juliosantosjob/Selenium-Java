@@ -17,11 +17,12 @@ public class AddProductTest {
 	@BeforeClass
 	public void setDriver() {
 		System.out.println("Start");
-		ChromeOptions options = new ChromeOptions();
 		String BaseUrl = "https://www.saucedemo.com/";
-                WebDriverManager.chromedriver().setup();
+                ChromeOptions options = new ChromeOptions();
+		options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
+		WebDriverManager.chromedriver().setup();
 
-		driver = new ChromeDriver();
+		driver = new ChromeDriver(options);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		driver.get(BaseUrl);
