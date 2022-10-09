@@ -2,6 +2,7 @@ package tests;
 
 import org.junit.Test;
 import testng.annotations.BeforeClass;
+import testng.annotations.AfterClass;
 import pages.LoginPage;
 import org.junit.Before;
 import java.time.Duration;
