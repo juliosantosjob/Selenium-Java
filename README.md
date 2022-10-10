@@ -4,6 +4,7 @@ Frameworks & tools:
 - Java
 - Selenium WebDriver
 - JUnit
+- TestNG
 - Cucumber (BDD) / Gherkin
 - Maven
 
