@@ -13,10 +13,10 @@ public class DriverFactory {
 
     @BeforeMethod
     public void setDriver() {
-        System.out.println("_________ Start _________");
+        System.out.println("Start");
         String BaseUrl = "https://www.saucedemo.com/";
         ChromeOptions options = new ChromeOptions();
-		options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
+	options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
         WebDriverManager.chromedriver().setup();
 
         driver = new ChromeDriver(options);
@@ -27,7 +27,7 @@ public class DriverFactory {
 
     @AfterMethod
     public void closeDriver() {
-        System.out.println("_________ Finish ________");
+        System.out.println("Finish");
         driver.quit();
     }
 }
