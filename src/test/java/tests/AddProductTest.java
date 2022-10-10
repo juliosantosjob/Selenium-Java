@@ -11,12 +11,9 @@ public class AddProductTest extends DriverFactory {
 	public void AddProduct() {
 		AddProductPage addProductPage = new AddProductPage(driver);
 		LoginPage loginPage = new LoginPage(driver);
-
-		String username = "standard_user";
-		String password = "secret_sauce";
-
+		
 		loginPage.goToSite();
-		loginPage.iFillOutMyCredentials(username, password);
+		loginPage.iFillOutMyCredentials("standard_user", "secret_sauce");
 		addProductPage.selectProduct();
 		addProductPage.accessMycart();
 		addProductPage.seeSessionMyCart();
