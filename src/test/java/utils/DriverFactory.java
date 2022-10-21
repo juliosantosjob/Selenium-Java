@@ -16,7 +16,7 @@ public class DriverFactory {
         System.out.println("Start");
         String BaseUrl = "https://www.saucedemo.com/";
         ChromeOptions options = new ChromeOptions();
-	options.addArguments("--headless", "--no-sandbox", "--disable-dev-shm-usage");
+	options.addArguments("--headless");
         WebDriverManager.chromedriver().setup();
 
         driver = new ChromeDriver(options);
